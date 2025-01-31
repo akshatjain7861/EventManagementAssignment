@@ -1,0 +1,151 @@
+/* EventForm.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .event-page {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 750px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-card h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .event-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-form label {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .event-form input,
+  .event-form textarea,
+  .event-form select {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .event-form input[type="datetime-local"] {
+    padding: 10px;
+  }
+  
+  .event-form input:focus,
+  .event-form textarea:focus,
+  .event-form select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+  }
+  
+  .event-form textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .event-form select {
+    background-color: #fafafa;
+    padding: 12px;
+  }
+  
+  .event-form button.submit-btn {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-form button.submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .event-form button.submit-btn:active {
+    background-color: #388e3c;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 30px;
+    }
+  
+    .form-card h2 {
+      font-size: 24px;
+    }
+  
+    .event-form label {
+      font-size: 14px;
+    }
+  
+    .event-form input,
+    .event-form textarea,
+    .event-form select {
+      font-size: 14px;
+    }
+  
+    .event-form button.submit-btn {
+      padding: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 20px;
+    }
+  
+    .event-form input,
+    .event-form textarea,
+    .event-form select {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .event-form button.submit-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  /* Custom Styles for EventForm */
